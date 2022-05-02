@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Cairo:200,300,regular,500,600,700,800,900);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;600&display=swap');
+
+@font-face {
+    font-family: Musamim;
+    src: url('../fonts/Musamim.ttf');
+}
+body {
+    /* font-family: Tajawal; */
+    background:none
+}
+
+#container {
+    display: block;
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212832;
+    border: 2px solid rgb(216, 216, 216);
+    /*background-color: rgb(247, 247, 247);*/
+    width: 1200;
+    border-radius: 9px;
+    overflow: auto;
+}
+
+/* Header */
+
+.header {
+    padding: 60px;
+    text-align: right;
+    background: #30475c;
+    /*background: linear-gradient(to right, #000000, #363636);*/
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.player {
+    border-radius: 10px;
+    width: 100;
+    position: absolute;
+    right: 23vh;
+    top: 7vh;
+    border: 1px solid #ffffff;
+}
+
+.logo {
+    position: absolute;
+    width: 180;
+    left: 10vh;
+    top: 3vh;
+}
+
+/* Weapon Option */
+
+.WeaponOpt {
+    padding: 100px;
+    width: 375;
+    background: url(../img/weapons.png);
+    /*background: linear-gradient(to right, #ffffff, #747474);*/
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: ease 200ms;
+    background-position: left;
+}
+
+.WeaponOpt:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+/* Mission Option */
+
+.MissionOpt {
+    padding: 100px;
+    width: 375;
+    background: url(../img/missions.png);
+    /*background: linear-gradient(to right, #ffffff, #747474);*/
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: ease-in-out 5s;
+    position: absolute;
+    right: 25;
+    top: 253;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.MissionOpt:hover {
+    /* transform: translateY(-20px); */
+    /* cursor: pointer; */
+    background-position: 30%;
+}
+
+/* Weapons Page */
+.WeaponPage {
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(247, 247, 247);
+    border: 2px solid rgb(216, 216, 216);
+    /*background-color: rgb(247, 247, 247);*/
+    width: 1200;
+    border-radius: 9px;
+    overflow: auto;
+}
+
+.WeaponPage2 {
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212832;
+    width: 1200;
+    border-radius: 9px;
+    overflow: auto;
+}
+
+/* Weapon Extra Option */
+
+.WeaponExtra {
+    padding: 100px;
+    width: 375;
+    background: linear-gradient(to right, #ffffff, #747474);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: ease 200ms;
+    background-position: left;
+}
+
+.WeaponExtra:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+/* Weapon Buy Option */
+
+.WaponBuy {
+    padding: 100px;
+    width: 375;
+    background: linear-gradient(to right, #ffffff, #747474);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: ease-in-out 200ms;
+    position: absolute;
+    right: 25;
+    top: 253;
+    background-position: center;
+}
+
+.WaponBuy:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+/* Weapons */
+
+.ak {
+    width: 1000;
+}
+
+/* Mission Page */
+
+.MissionPage {
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(247, 247, 247);
+    width: 1200;
+    border-radius: 9px;
+    overflow: auto;
+}
+
+.cia_mission {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* Other */
+.swiper {
+    height: 500;
+    color: rgb(124, 124, 124);
+    border-radius: 10px;
+  }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #30475c;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    left: 5vh;
+    border: 2px solid #f2a367;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+:root{
+    --swiper-theme-color: #f2a367;
+}
+
+.swiper-pagination-progressbar{
+    background: rgba(255, 255, 255, 0.25);
+    position:absolute
+}
+
+.back {
+    /*
+    color: #dadada;
+    background-color: #080917;
+    */
+    color: #f7f7f7;
+    background-color: #30475c;
+    width: 100;
+    height: 25;
+    text-align: center;
+    border-radius: 20px;
+    transition: ease 200ms;
+}
+
+.back:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #f2a367;
+}
+
+.notify {
+    font-family: Musamim;
+    position: absolute;
+    left: 90vh;
+    bottom: 5vh;
+    font-size: 2vh;
+    transition: ease 200ms;
+    color: #dadada;
+    text-shadow: 4px 5px 4px #0000002e;
+    transform: translate(-50%, -50%);
+}
+
+.fa-times-circle {
+    color: #30475c;
+    position: absolute;
+    right: 6;
+    top: 1vh;
+    transition: ease 200ms;
+}
+
+.fa-times-circle:hover {
+    cursor: pointer;
+    color: #f2a367;
+}
+
+i {
+    color: #f7f7f7;
+    position: absolute;
+    right: 6vh;
+    top: 7vh;
+}
+
+h1 {
+    color: #a5a5a5;
+    position: absolute;
+    right: 6vh;
+    top: 8vh;
+    font-size: 26px;
+}
+
+h2 {
+    color: #a5a5a5;
+    position: absolute;
+    right: 6vh;
+    top: 15vh;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.red {
+    color: #dadada;
+    position: absolute;
+    left: 6vh;
+    top: 2vh;
+    font-size: 26px;
+    font-weight: bolder;
+    font-style: oblique;
+    background: #ff0000;
+    width: 100;
+    border-radius: 10px;
+}
+
+.yellow {
+    color: #dadada;
+    position: absolute;
+    left: 6vh;
+    top: 2vh;
+    font-size: 26px;
+    font-weight: bolder;
+    font-style: oblique;
+    background: #ffd000;
+    width: 120;
+    border-radius: 10px;
+}
+
+.green {
+    color: #dadada;
+    position: absolute;
+    left: 6vh;
+    top: 2vh;
+    font-size: 26px;
+    font-weight: bolder;
+    font-style: oblique;
+    background: #08bf00;
+    width: 100;
+    border-radius: 10px;
+}
+
+.EnterMission {
+    color: #dadada;
+    position: absolute;
+    right: 19vh;
+    bottom: 2vh;
+    font-size: 26px;
+    background: #f7f7f7;
+    width: 135;
+    border-radius: 10px;
+    transition: ease 500ms;
+}
+
+.EnterMission:hover {
+    cursor: pointer;
+    background: #00a1ff;
+}
+
+#idcard {
+    display: block;
+    font-size: 20px;
+    padding: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 900px;
+    border-radius: 50px;
+	text-align: center;	
+    background-image: url(../img/bck.png);
+    background-size: 1000px;
+    border: 3px solid rgb(235, 235, 235);
+}
+
+.welcome {
+    text-align: right;
+    color: rgb(255, 255, 255);
+    position: relative;
+    right: 50%;
+    font-weight: 600;
+    top: 10%;
+    font-size: xx-large;
+}
+
+.about {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    right: 55%;
+    top: 15%;
+    position: relative;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+.char-reg-input1 {
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    left: 75%;
+    bottom: 20%;
+    border: 2px solid #ffcf90;
+    background: antiquewhite;
+}
+
+.char-reg-input2 {
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    left: 38%;
+    bottom: 20%;
+    border: 2px solid #ffcf90;
+    background: antiquewhite;
+}
+
+.char-reg-input3 {
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    left: 43%;
+    bottom: 5%;
+    border: 2px solid #ffcf90;
+    background: antiquewhite;
+}
+
+.char-reg-input4 {
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    height: 50px;
+    left: 5.5%;
+    bottom: 5%;
+    border: 2px solid #ffcf90;
+    background: antiquewhite;
+    transition: all 1000ms;
+}
+
+#gender {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.confirm {
+    position: relative;
+    border: 0px;
+    top: 10%;
+    height: 59px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: #20adff;
+    color: white;
+    font-weight: 600;
+    left: 3%;
+    transition: ease 200ms;
+}
+
+.confirm:hover {
+    background-color: #47bbff;
+}
+
+.logo2 {
+    position: relative;
+    color: black;
+    background-image: url('../img/logo.png');
+    height: 150px;
+    width: 150px;
+    right: 75%;
+    top: 30%;
+}
+
+input[type=text]{
+    outline: none;
+}
+input[type=date]{
+    outline: none;
+}
+
+/* Ui */
+@keyframes slidein {
+  from {
+    transform: translateX(-10%);
+    /* background-color: #ffaa2b */
+  }
+
+  to {
+    opacity: 100;
+
+    transform: translateX(0%);
+  }
+}
+@keyframes slideout {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-15%);
+    opacity: 0;
+  }
+}
+
+@import "compass/css3";
+
+.pdp{
+    font-weight:0;
+    font-size:17px;
+    
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    letter-spacing:1px;
+    color:#E6E6E5;
+    width:100%;
+    opacity:1;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    position: relative;
+    z-index: 99;
+    animation: slidein 0.5s forwards;
+    -webkit-animation: slidein 0.5s forwards;
+    text-shadow: 1px 1px 0px rgba(0,0,0,1);
+}
+
+.slide-out{
+    animation: slideout 0.5s forwards;
+    -webkit-animation: slideout 0.5s forwards;
+}
+
+.buyweapon_23 {
+    width: fit-content;
+    background-color: #f2a367;
+    color: white;
+    min-width: 20%;
+    border-radius: 0.2vw;
+}
